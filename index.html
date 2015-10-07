@@ -1,74 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="Cumming, GA Photography, Photographer, Alpharetta, Georgia, North Georgia">
-<title>Brandy Fortune ~ Richmond, Virginia</title>
-<meta name="google-site-verification" content="Phnu67gdYqqulri-28bgnF14jXFt0vM0-1N_U6WI7XY" />
-<link href="css_2012.css" rel="stylesheet" type="text/css" />
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script>
-		$(function() {
-		
-			$("#slideshow > div:gt(0)").hide();
-	
-			setInterval(function() { 
-			  $('#slideshow > div:first')
-			    .fadeOut(1000)
-			    .next()
-			    .fadeIn(1000)
-			    .end()
-			    .appendTo('#slideshow');
-			},  3500);
-			
-		});
-	</script>
-
+	<meta charset="UTF-8">
+	<meta name="google-site-verification" content="Phnu67gdYqqulri-28bgnF14jXFt0vM0-1N_U6WI7XY">
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link href="css_2012.css" rel="stylesheet" type="text/css">
+	<title>Brandy Fortune ~ Richmond, Virginia</title>
+	<meta property="og:title" content="Brandy Fortune ~ Richmond, Virginia" />
+	<!-- this should be a sentence. you really have keywords as the description here -->
+	<meta name="description" content="Cumming, GA Photography, Photographer, Alpharetta, Georgia, North Georgia" />
+	<meta property="og:description" content="Cumming, GA Photography, Photographer, Alpharetta, Georgia, North Georgia" />
+	<meta property="og:url" content="http://brandyfortune.com">
+	<link rel="canonical" href="http://brandyfortune.com">
+	<!-- you want this to be SQUARE and at lease 600x600. -->
+	<meta property="og:image" content="SHARING">
+	<link rel="image_src" href="SHARING" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
+	<div class="main">
 
-<div class="main">
-  
-  <div style="float:left;">
-<img src="images/brandyfortune_logo.gif" width="368" height="96" alt="Home" style="padding-right:20px;padding-left:50px;padding-top:30px;" /></div>
+		<a href="index.html"><img src="images/brandyfortune_logo.gif" alt="Brandy Fortune: User Experience" class="logo"></a>
+		<div class="nav">
+			<a href="projects.html">Projects</a><a href="bio.html">Result</a><a href="reserve.html">Contact</a>
+		</div>
 
-  <div class="nav">
- <a href="projects.html"><img src="images/btn_projects.gif" alt="Projects" /></a><a href="bio.html"><img src="images/btn_resume.gif" alt="Biography" /></a><a href="reserve.html"><img src="images/btn_contact.gif" alt="Reservations" /></a>
- </div>
- 
+		<div class="clearpad"></div>
 
+	</div>
 
+	<div class="slideshow">
+		<div id="slideshow">
+			<div>
+				<img src="images/Gallery_04.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/Gallery_07.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/Gallery_05.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/Gallery_10.jpg" alt="">
+			</div>
+		</div>
+	</div>
 
- <div class="clearpad"></div>
- 
-   </div>
-
-
-
-<div class="slideshow">
-<div id="slideshow">
-       <div>
-<img src="images/Gallery_04.jpg" />
-   </div>
-        <div>
-<img src="images/Gallery_07.jpg" />
-   </div>
-       <div>
-<img src="images/Gallery_05.jpg" />
-   </div>
-    <div>
-<img src="images/Gallery_10.jpg" />
-   </div>
-</div>
-</div>
-
-
-
-
-
+	<footer>
+		<p>&copy; Brandy Fortune.</p>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$("#slideshow > div:gt(0)").hide();
+			setInterval(function() {
+				$('#slideshow > div:first')
+				.fadeOut(1000)
+				.next()
+				.fadeIn(1000)
+				.end()
+				.appendTo('#slideshow');
+			}, 3500);
+		});
+	</script>
 
 </body>
+
 </html>
