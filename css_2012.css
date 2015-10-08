@@ -79,7 +79,7 @@ img {
 @media only screen and (min-width:800px) {
 	.nav {
 		float: right;
-		padding-top: 102px;
+		padding-top: 10px;
 	}
 }
 .content {
