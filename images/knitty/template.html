@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Knitty.com First Fall 2015</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+/*! these three classes are for the search popover I customized, if you move them to the main stylesheet it breaks because these are over-riding the regular popover style */
+
+.form-control {width:320px;border-radius: 0;}
+
+.popover {
+    background: #333;
+    width: 100%;
+}
+
+.popoverLarge{
+  max-width: 400px;
+}
+
+
+</style>
+
+  </head>
+<body>
+
+ <nav class="navbar navbar-inverse"> 
+    
+  <div class="hidden-xs" style="background-image:url('images/header_photo.jpg');height:140px;padding-top:20px;margin-top:-1px;margin-left:-1px;">
+       <div class="container"><img src="images/knittylogo2014white.png"><div class="pull-right text-right">
+
+
+
+        <a href="http://www.knitty.com/librarycovers.php"><img src="images/covers.gif"></a>
+       <h4 style="color:white;padding-top:10px;font-weight:200;letter-spacing:2px;">issue 52</h4></div></div> 
+    
+    </div> 
+
+    <!-- NAV BAR --> 
+      <div class="container">
+
+       <div class="navbar-header">
+       <!-- Hamburger -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- KNITTY LOGO SMALL SCREEN --> 
+         <a class="navbar-brand visible-xs" href="#"><img src=
+        "images/phone_logo.gif" class="img-responsive" alt="Knitty Magazine"></a>
+
+          
+          <div class="visible-xs-block pull-right" style="padding-right: 1.5em;padding-top: 1em;">
+              <a id="smallSearchPopupoverButton" type="button" href="#"><span class="glyphicon glyphicon-search" style="color:white"></span> </a>        <a type="button" href="http://www.knitty.com/librarycovers.php"><span class="glyphicon glyphicon-th" style="padding-left:20px;color:white"></span></a>
+
+
+       
+
+                <!-- NOTE: This is not shown, the popover reads this
+                and injects it at runtime -->
+            
+            <!-- Small Search Only -->
+            <div id="popover-content" class="hide">
+              <div class="popoverSmall">
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <input type="search" class="form-control" id="searchInput" placeholder="search knitty.com" style="font-size:20px;background:#BBB;text:white;width:100%;">
+                  </div>
+                  <button type="submit" class="btn btn-lg" style="width:100%">search</button>  
+                </form>
+              </div>
+              </div>
+          </div>
+
+      </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+             <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">&#62; THIS ISSUE &#60;
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                         <li><a href="#">Something else here</a></li>
+                   <!--  <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>  -->                  
+                </ul>
+            </li>
+            <li><a href="#about">KNITTYSPIN</a></li>
+            <li><a href="#contact">PATTERN LIBRARY</a></li>
+            <li><a href="#contact">SHOP</a></li>
+            <li><a href="#contact">SUBMIT</a></li>
+            <li><a href="#contact">ABOUT</a></li>
+
+<li class="hidden-xs"><a id="largeSearchPopupoverButton" data-placement="bottom" data-toggle="popover" data-container="body" type="button" data-html="true" href="#"><span class="glyphicon glyphicon-search" style="color:#bbb">
+</a> 
+
+  <!-- Large Search, Not Shown, javacript copies this-->
+  <div id="popover-content2" class="hide">
+      <form class="form-inline" role="form">
+        <div class="form-group" style="width:100%">
+          <input type="search" class="form-control" id="searchInput" placeholder="search knitty.com" style="font-size:20px;background:#BBB;text:white;width:100%;">
+        </div>
+        <button type="submit" class="btn btn-lg" style="width:100%;margin-top:15px;">search</button>  
+      </form>
+  </div>
+
+</li>
+
+
+  </ul>
+
+        </div>       
+
+
+
+     </div><!-- /.container -->
+    </nav>
+
+        <!-- END NAV BAR (I THINK) --> 
+   
+  
+
+
+ <div class="container" style="padding-top:20px;"></div>
+
+
+
+   <div class="container">
+
+<div class="row">
+  <div class="col-md-5">
+      <img src="images/bakerstreetBEAUTY.jpg" class="img-responsive" alt="Backer Street">
+      <!-- THIS IS FOR SOCIAL -->
+      <div style="opacity: 0.7;background:white;margin-top:-50px;height:50px;padding:0px;" class="hidden-print">&nbsp;</div>
+      <div style="margin-top:-40px;height:50px;padding:0px;z-index:101;opacity:1;position:relative;" class="hidden-print">
+
+&nbsp;&nbsp;&nbsp;<a href="http://www.ravelry.com/badges/redirect?p=baker-street-scarf"><img src="http://api.ravelry.com/badges/projects?p=baker-street-scarf&amp;t=.gif" style="border: none;z-index:101;margin-top:-10px;" /></a>
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="I love this Knitty pattern! #knittymag" data-count="horizontal" data-via="knittydotcom">Tweet</a> <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<a href="javascript:void((function(){var%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)})());"><img src="http://knitty.com/images/pin_it_button.gif" alt="Pin It!" class="align_left" style='border: none;margin-top:-10px;'/></a>
+
+      </div>      <!-- END THIS IS FOR SOCIAL -->
+
+
+  </div>
+
+
+  <div class="col-md-6"><h1>Baker Street</h1>
+<div class="row">
+  <div class="col-xs-5 col-md-4"><h4><small><i>by Joan of Dark</i></small></h4></div>
+
+    <div class="col-xs-7 col-md-8" style="padding-top:10px;">  
+      <p class="pull-right hidden-print"><a class="btn btn-primary btn-md" href="#" role="button">print pattern</a></p> 
+        </div>
+        </div>
+
+ <img src="images/mellow.gif" style="padding-bottom:15px;">
+    <p>
+    Here’s something for a knitter to solve: What’s an easy scarf to knit that looks nice, isn’t a basic rib or garter stitch, but can be easily knit while reading a good book or watching a good mystery show? The answer is the Baker Street Scarf!</p>
+
+<p>Knit in a lovely yarn that any man (or woman) would want to wear while looking smart around town, the mix of knit and purl on one side and plain knitting on the opposite side give each side of the scarf a cool and unique look. The scarf worn on the BBC version of <a href="#">Sherlock Holmes</a> is in a darker navy or grey color, but since our model is Neil Gaiman, the original had to be in black! Knit it in basic black like Neil’s to be mysterious, or in a bright color if standing out in a crowd suits you better!</p>
+
+<small>Editor’s note: When Tina at Blue Moon Fiber Arts saw the photo at left, she was inspired! She created a lovely colorway just for the Knitty release of this pattern and put it on a lofty, squooshy base of super-fine Merino! Named after a quote from Neil Gaiman’s American Gods, “Say Nevermore” (quotes intentional) evokes the darkness of true black while incorporating hints of color that are the hallmark of the Blue Moon Fiber Arts Raven colorways. You can see it on designer Joan of Dark in the photos below.</small>
+
+<div style="padding-top:20px;">
+
+<p><img src="images/spacerButton.gif" style="padding-right:5px;"> model: Neil Gaiman <img src="images/spacerButton.gif" style="padding-right:5px;padding-left:15px;"> photos: Kyle Cassidy</p>
+
+</div>
+
+
+  </div>
+
+  <div class="col-md-1"></div>
+
+
+</div>
+
+</div> <!-- end container -->
+
+
+
+
+            <!-- Main jumbotron for AD -->
+             <div class="container" style="padding-top:40px;"></div>
+    <div class="jumbotron hidden-print">
+      <div class="container">
+        <img src="images/BMFAFF15.jpg" class="img-responsive" style="margin: 0 auto;">
+      </div>
+    </div>
+
+            <!-- END Main jumbotron for AD -->
+
+
+  <div class="container">
+<div class="row">
+  <div class="col-md-7">
+    <h4>SIZE</h4>
+<p>One</p> 
+
+<h4>FINISHED MEASUREMENTS</h4>
+<p><strong>Width:</strong> 6 inches </br>
+<strong>Length:</strong> 6 feet</p>
+
+<h4>MATERIALS</h4>
+<p><strong>Yarn </strong></p>
+<p><img src="images/spacerButton.gif"> Plymouth Royal Cashmere [100% Fine Cashmere; 125yards/50g]; color: #8010, Black; 3 skeins (as shown on Mr Gaiman above)</p>
+
+<p><strong>OR </strong></br>
+<img src="images/spacerButton.gif"> Blue Moon Fiber Arts Gaea [100% Certified Organic 21.5 Micron Merino; 305y/8oz]; color: , 2 skeins. (as shown below)</p>
+
+<p><strong>Recommended needle size</strong></p>
+<p>[always use a needle size that gives you the gauge listed below -- every knitter’s gauge is unique]  
+</br><img src="images/spacerButton.gif">1 set(s) US #7/4.5mm needles for working flat</p>
+
+<p><strong>Notions</strong></p>
+
+<p>    <img src="images/spacerButton.gif"> yarn needle</br>
+  <img src="images/spacerButton.gif"> size H crochet hook or close facsimile (note: exact size isn’t critical)</br>
+  <img src="images/spacerButton.gif"> 4 inch square of cardboard</p>
+
+<h4>GAUGE</h4>
+<p>18 sts/24 rows = 4 inches in stockinette stitch</p><p>
+
+<h4>PATTERN NOTES</h4>
+<p><a href="#">[Knitty’s list of standard abbreviations and techniques can be found .]</a></p>
+
+<p><strong>Joan’s fringe Fringing Method (taught to her by her grandmother, so no disrespect, yo)</strong></br>
+<dfn>Step 1:</dfn> Decide how long you want your fringe to be. If you want 6” fringe, you need to find something that is about 6” to wrap yarn around. Or you can cut a piece of cardboard into a square for your desired size.</p>
+
+
+
+  </div>
+
+
+    <div class="col-md-2"></div>
+  <div class="col-md-3"><img src="images/mciverVISIONARIESFF15.jpg" class="img-responsive hidden-print"></div>
+</div>
+
+   
+
+
+
+</div> <!-- end container --> 
+
+
+
+            <!-- Main jumbotron for AD -->
+             <div class="container" style="padding-top:40px;"></div>
+    <div class="jumbotronDark">
+      <div class="container">    
+
+<div class="row">
+  <div class="col-xs-11 col-md-11">      <img src="images/joanofdark.jpg" class="img-responsive pull-left" style="padding:0 30px 10px 0;"> 
+
+      <h4><small>Joan of Dark is sometimes called <a href="#">Toni Carr</a>. But not very often. Her passion for knitting started when she asked her grandmother to show her how, and instantly regretted all the time in her life spent not knitting. Her first book, Knockdown Knits, was all about roller derby and knitting. The second book, Knits for Nerds, is all about nerdy knitting. So one could guess that Joan is a roller derby loving knitting nerd. This would be correct. She is also a rescuer of animals, and surrounds herself with not only a very loving and tolerant husband, but a miniature horse named Starkey, Pigwidgeon (Widget) the parrot, a very weird dog named Sassy Burrito, Willie the craziest corgi mutt ever and a cat named Rori. Future plans may include a female duck named Howard, but the husband's tolerance may only stretch so far.</small></h4>
+
+      <h4><small>When not knitting, skating, performing aerial silks, or running though muddy obstacle course races, you may find she is working in her coffee shop, Strange Brew, playing the guitar or the bass, or occasionally having too many glasses of wine and entertaining her twitter followers with her tipsy ramblings (search #joanofdrunk).</small></h4>
+
+        </div> <!-- closes content -->
+        </div> <!-- closes row -->
+
+   
+
+<div class="row">
+<div class="col-md-10 col-md-offset-1"> 
+
+  <h3><small>Pattern © Joan of Dark. Images of Mr. Gaiman and headshot © 2015 Kyle Cassidy. Other images © Joan of Dark. Contact Joan</small></h3>
+
+</div>
+</div>
+
+
+        </div> <!-- closes container -->
+        </div> <!-- closes jumbotron -->
+
+
+
+          <!-- Main jumbotron for AD -->
+    <div class="jumbotron hidden-print" style="margin-top:-30px;padding-top:0px;margin-bottom:-30px;">
+      <div class="container">    
+
+<div class="row text-center">
+    <div class="col-md-4">  
+<h1><small>fun stuff</small></h1>
+<ul class="list-unstyled" style="margin-top:-20px;">
+<li><a hfre="#" class="footer">Coffee Shop</a></li>
+<li><a hfre="#" class="footer">Contests</a></li>
+<li><a hfre="#" class="footer">Bunnies</a></li>
+</ul>
+   </div>
+       <div class="col-md-5">  
+<h1><small>important stuff</small></h1>
+<ul class="list-unstyled" style="margin-top:-20px;">
+<li><a hfre="#" class="footer">Advertise in Knitty</a></li>
+<li><a hfre="#" class="footer">Yarn Shop Owners</a></li>
+<li><a hfre="#" class="footer">Submit a Design</a></li>
+<li><a hfre="#" class="footer">Legal Info</a></li>
+   </div>
+       <div class="col-md-3">  
+<h1><small>learn</small></h1>
+<ul class="list-unstyled" style="margin-top:-20px;">
+<li><a hfre="#" class="footer">Blog</a></li>
+<li><a hfre="#" class="footer">Who is Knitty?</a></li>
+<li><a hfre="#" class="footer">FAQ</a></li>
+</ul>
+   </div>
+</div>
+
+      <div class="container" style="padding-top:40px;"></div>
+
+     <div class="col-md-12">  
+<ul class="list-inline text-center">
+<li><img src="images/knittyDesign_01.jpg" class="img-responsive"></li>
+  <li><img src="images/social_facebook.gif" class="img-responsive" ></li>
+    <li><img src="images/social_twitter.gif" class="img-responsive" ></li>
+      <li><img src="images/social_pintrest.gif" class="img-responsive" ></li>
+        <li><img src="images/social_insta.gif" class="img-responsive" ></li>
+</ul>
+</div>
+
+       
+</div>
+
+
+
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/searchPopovers.js"></script>
+
+  </body>
+</html>
