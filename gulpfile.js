@@ -12,18 +12,20 @@ gulp.task('browserSync', function()
 	browserSync.init({
         proxy: "http://localhost:9037"
     });
-    gulp.watch(["src/client/*.js",
+    
+   gulp.watch(["src/client/*.js",
     			"src/client/*.html",
     			"src/client/*.css",
     			"src/client/**/*.js",
     			"src/client/**/*.html",
-    			"src/client/**/*.css",], []);
+    			"src/client/**/*.css"])
+   .on('change', browserSync.reload);
 });
 
 gulp.task('start', function () {
   nodemon({
     script: 'src/static/server.js'
-  , ext: 'js html css'
+  , ext: 'js html'
   , env: { 'NODE_ENV': 'development' }
   })
 })
