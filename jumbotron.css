@@ -3,3 +3,9 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
+svg {
+  display: block;
+  width: 50%;
+  margin: 50px auto;
+}
