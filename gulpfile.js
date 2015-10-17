@@ -13,12 +13,12 @@ gulp.task('browserSync', function()
         proxy: "http://localhost:9037"
     });
     
-   gulp.watch(["src/client/*.js",
-    			"src/client/*.html",
-    			"src/client/*.css",
-    			"src/client/**/*.js",
-    			"src/client/**/*.html",
-    			"src/client/**/*.css"])
+   gulp.watch(["*.js",
+    			"*.html",
+    			"*.css",
+    			"**/*.js",
+    			"**/*.html",
+    			"**/*.css"])
    .on('change', browserSync.reload);
 });
 
