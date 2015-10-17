@@ -7,8 +7,8 @@ var favicon = require('serve-favicon');
 var app = express();
 
 
-app.use('/', express.static('./src/client/'));
-// app.use('/', express.static('./build/'));
+// app.use('/', express.static('./src/client/'));
+app.use('/', express.static(__dirname));
 
 // app.use(express.static('build/images'));
 
@@ -20,14 +20,14 @@ app.get('/', function(req, res)
 {
 	console.log("app::get/");
 	//res.send('Default Express server response. Perhaps you should run grunt serve --dev or --build');
-	res.sendFile('/build/index.html');
+	res.sendFile(__dirname + '/index.html');
 });
 
 app.use(function(req, res, next)
 {
 	console.log("app::use fallback");
     console.log('Falling back to build/index.html instead of ' + req.url);
-    req.url = 'build/index.html';
+    req.url = 'index.html';
 });
 
 
