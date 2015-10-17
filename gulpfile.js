@@ -24,7 +24,7 @@ gulp.task('browserSync', function()
 
 gulp.task('start', function () {
   nodemon({
-    script: 'src/static/server.js'
+    script: 'server.js'
   , ext: 'js html'
   , env: { 'NODE_ENV': 'development' }
   })
