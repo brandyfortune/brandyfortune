@@ -1,0 +1,22 @@
+{
+  "name": "BrandyFortune",
+  "homepage": "https://github.com/brandyfortune/brandyfortune",
+  "authors": [
+    "brandyfortune <brandy@brandyfortune.com>"
+  ],
+  "description": "Portfolio",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
