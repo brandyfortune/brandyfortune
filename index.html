@@ -20,7 +20,7 @@
     <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet" type="text/css" charset="utf-8" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,7 +31,13 @@
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+ <nav class="navbar"> 
+    
+  <div class="hidden-xs" style="padding-top:40px;">
+       <div class="container" style="margin-bottom:-35px;"><img src="logo.svg"></div> 
+</div>
+
+ <nav class="navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -40,83 +46,63 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+
+
+    <!--  LOGO MOBILE SCREEN --> 
+         <a class="navbar-brand visible-xs" href="#"><img src=
+        "logo.svg" style="width: 45%; height:" class="img-responsive" alt="Brandy Fortune"></a>
+
+         <!-- title or logo -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#about">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </nav>
+
+
+ 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, Yes!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <img src="images/Gallery_04.jpg" class="img-responsive text-center">
       </div>
     </div>
 
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-        <p>Tweet Me</p>
+        <div class="col-md-4 col-xs-4">
 
-<svg viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
-  <path d="
-    M 630, 425
-    A 195, 195 0 0 1 331, 600
-    A 142, 142 0 0 0 428, 570
-    A  70,  70 0 0 1 370, 523
-    A  70,  70 0 0 0 401, 521
-    A  70,  70 0 0 1 344, 455
-    A  70,  70 0 0 0 372, 460
-    A  70,  70 0 0 1 354, 370
-    A 195, 195 0 0 0 495, 442
-    A  67,  67 0 0 1 611, 380
-    A 117, 117 0 0 0 654, 363
-    A  65,  65 0 0 1 623, 401
-    A 117, 117 0 0 0 662, 390
-    A  65,  65 0 0 1 630, 425
-    Z"
-    style="fill:#000;"/>
-</svg>
+<a href="#" title="Twitter"><svg class="svg" viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg><!--[if lt IE 9]><em>Twitter</em><![endif]--></a>
 
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <div class="col-md-4 col-xs-4">
 
-<a href="#" class="icon-2 500px" title="500px"><svg viewBox="0 0 512 512"><path d="M256.3 293c26.9 31.2 58.3 58.5 99.9 58.5 56.1 0 89.5-42.6 89.5-96.8 0-54-34.1-94.2-89-94.2 -43.9 0-72.7 28.5-100.4 62.1 -28.5-34.1-56.7-62.1-101.4-62.1 -53.5 0-88.5 40.2-88.5 95.2 0 54.6 35.8 95.7 90.8 95.7C204.1 351.5 228.7 321.9 256.3 293zM115.5 256.8c0-21.3 13.9-44.5 39.3-44.5 26 0 52.7 25.9 70.4 45 -17.2 20.1-42.5 41.9-68.8 41.9C130.3 299.2 115.5 281.1 115.5 256.8zM287.3 257.3c18.4-19.9 41.2-45 68.3-45 26.4 0 41.4 20.8 41.4 44 0 23.4-13.7 43-39.8 43C329.2 299.2 305.7 278.5 287.3 257.3z"/></svg><!--[if lt IE 9]><em>500px</em><![endif]--></a>
-
-
+<a href="#" title="500px"><svg class="svg" viewBox="0 0 512 512"><path d="M256.3 293c26.9 31.2 58.3 58.5 99.9 58.5 56.1 0 89.5-42.6 89.5-96.8 0-54-34.1-94.2-89-94.2 -43.9 0-72.7 28.5-100.4 62.1 -28.5-34.1-56.7-62.1-101.4-62.1 -53.5 0-88.5 40.2-88.5 95.2 0 54.6 35.8 95.7 90.8 95.7C204.1 351.5 228.7 321.9 256.3 293zM115.5 256.8c0-21.3 13.9-44.5 39.3-44.5 26 0 52.7 25.9 70.4 45 -17.2 20.1-42.5 41.9-68.8 41.9C130.3 299.2 115.5 281.1 115.5 256.8zM287.3 257.3c18.4-19.9 41.2-45 68.3-45 26.4 0 41.4 20.8 41.4 44 0 23.4-13.7 43-39.8 43C329.2 299.2 305.7 278.5 287.3 257.3z"/></svg><!--[if lt IE 9]><em>500px</em><![endif]--></a>
        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-     <a href="#" class="icon-17 linkedin" title="LinkedIn"><svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg><!--[if lt IE 9]><em>LinkedIn</em><![endif]--></a>
+        <div class="col-md-4 col-xs-4">
 
-
-
-
+     <a href="#" title="LinkedIn"><svg class="svg" viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg><!--[if lt IE 9]><em>LinkedIn</em><![endif]--></a>
 
         </div>
       </div>
 
-      <hr>
+  
 
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
+    <!--   <footer>    <hr>
+        <p >&copy; Company 2014</p>
+      </footer> -->
     </div> <!-- /container -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
