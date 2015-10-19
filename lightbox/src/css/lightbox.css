@@ -1,93 +1,6 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-bottom: 20px;
-}
-
-.svg {
-  display: block;
-  width: 50%;
-  margin: 30px auto;
-   color: #BBB;
-   fill: #BBB;
-}
-
-.thumbnail {
-
-}
-
-blockquote {
-font-style: italic;
-font-size: 14px;
-}
-
-
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(images/SLIDE_BG_AQUA.jpg);
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: black 0.2em 0.2em 0.2em;
-    padding:0px;
-    margin:0px;
-    margin-left: -1px;
-}
-
-.navbar .navbar-header .icon-bar {
-    background-color: black;
-}
-
-.navbar {
-
-border-radius: 0px;
-}
-
-
-@font-face {
-    font-family: 'museo_slab500';
-    src: url('museo/museo_slab_500-webfont.eot');
-    src: url('museo/museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('museo/museo_slab_500-webfont.woff2') format('woff2'),
-         url('museo/museo_slab_500-webfont.woff') format('woff'),
-         url('museo/museo_slab_500-webfont.ttf') format('truetype'),
-         url('museo/museo_slab_500-webfont.svg#museo_slab500') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-li { 
-	font-family: 'museo_slab500', Arial, sans-serif; 
-	color:#000; 
-	font-size: 1.3em;
-}
-
-
-/* unvisited link */
-a:link {
-    color: #000;
-}
-
-/* visited link */
-a:visited {
-    color: #000;
-}
-
-/* mouse over link */
-a:hover {
-    color: #000;
-}
-
-/* selected link */
-a:active {
-    color: #000;
-}
-
-
 /* Preload images */
 body:after {
-  content: url(lightbox/dist/images/close.png) url(lightbox/dist/images/loading.gif) url(lightbox/dist/images/prev.png) url(lightbox/dist/images/next.png);
+  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
   display: none;
 }
 
@@ -166,7 +79,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(lightbox/dist/images/loading.gif) no-repeat;
+  background: url(../images/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -197,7 +110,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background: url(lightbox/dist/images/prev.png) left 48% no-repeat;
+  background: url(../images/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -215,7 +128,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background: url(lightbox/dist/images/next.png) right 48% no-repeat;
+  background: url(../images/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -279,7 +192,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(lightbox/dist/images/close.png) top right no-repeat;
+  background: url(../images/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -295,4 +208,3 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-
