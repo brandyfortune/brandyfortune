@@ -11,6 +11,15 @@ body {
    fill: #BBB;
 }
 
+.thumbnail {
+
+}
+
+blockquote {
+font-style: italic;
+font-size: 14px;
+}
+
 
 .jumbotron {
     margin-bottom: 0px;
