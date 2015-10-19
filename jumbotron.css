@@ -15,9 +15,14 @@ body {
 
 }
 
+h2 { 
+  font-family: 'museo_slab500', Arial, sans-serif; 
+  color:#008B8B; 
+}
+
 blockquote {
 font-style: italic;
-font-size: 14px;
+font-size: 16px;
 }
 
 
